@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Tarjeta from "./Components/Tarjeta";
+import TarjetaBootstrap from "./Components/TarjetaBootstrap";
+import TarjetaPerfil from "./Components/TarjetaPerfil/TarjetaPerfil";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className='App-header'>
+        <Tarjeta></Tarjeta>
+        <TarjetaPerfil></TarjetaPerfil>        
+        <TarjetaBootstrap></TarjetaBootstrap>
       </header>
     </div>
+    
   );
 }
 
